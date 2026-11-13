@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#10352b">
+  <title>Escolha suas funções — Juventude em Movimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="role-page">
+  <div class="role-grain" aria-hidden="true"></div>
+  <header class="game-header role-header">
+    <a class="game-brand" href="index.html"><span class="game-brand-icon">✳</span><span>JUVENTUDE EM<br><strong>MOVIMENTO</strong></span></a>
+    <div class="role-header-center"><span class="header-overline">VILA ESPERANÇA</span><span class="header-status"><i></i> PREPARAÇÃO DA EQUIPE</span></div>
+    <a href="index.html" class="header-exit">SAIR DO JOGO <span>↗</span></a>
+  </header>
+  <main class="role-main">
+    <div class="role-topline"><span>FASE 00 / FORMAÇÃO DA EQUIPE</span><span>01 — 03</span></div>
+    <section class="role-intro">
+      <div class="role-intro-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> TODA MUDANÇA COMEÇA COM UMA ESCOLHA</div><h1>Antes de começar,<br>escolha seu <em>papel.</em></h1><p>Você fará parte da equipe responsável por pensar soluções para a Vila Esperança. Escolha duas áreas em que deseja atuar e descubra como suas habilidades podem influenciar as decisões da comunidade.</p><div class="choose-count"><span class="count-number" id="selectedCount">00</span><span>DE 02 FUNÇÕES<br>SELECIONADAS</span></div></div>
+      <div class="role-intro-art"><div class="role-asterisk">✳</div><div class="role-circle circle-outline"></div><div class="role-circle circle-solid"></div><div class="role-quote">“Uma comunidade<br>se constrói em<br><em>conjunto.</em>”</div><div class="role-art-label">VILA ESPERANÇA · 2026</div></div>
+    </section>
+    <section class="role-selection-section">
+      <div class="role-section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> SUA EQUIPE, SUAS HABILIDADES</div><h2>Escolha duas funções</h2></div><p>Cada função fortalece uma área da comunidade. Combine habilidades para enfrentar os desafios com mais estratégia.</p></div>
+      <div class="role-grid" id="roleGrid">
+        <button class="role-card" type="button" data-role="urbanista" aria-pressed="false"><span class="role-card-index">01</span><span class="role-icon role-icon-green">⌂</span><span class="role-card-title">Urbanista comunitário</span><span class="role-card-desc">Pensa nos espaços, na infraestrutura e em soluções para o território.</span><span class="role-skill"><b>+4</b> INFRAESTRUTURA</span><span class="role-check">✓</span></button>
+        <button class="role-card" type="button" data-role="educador" aria-pressed="false"><span class="role-card-index">02</span><span class="role-icon role-icon-yellow">▤</span><span class="role-card-title">Educador social</span><span class="role-card-desc">Cria caminhos para aprendizagem, formação e acesso ao conhecimento.</span><span class="role-skill"><b>+4</b> EDUCAÇÃO</span><span class="role-check">✓</span></button>
+        <button class="role-card" type="button" data-role="saude" aria-pressed="false"><span class="role-card-index">03</span><span class="role-icon role-icon-blue">✚</span><span class="role-card-title">Agente de saúde</span><span class="role-card-desc">Prioriza prevenção, cuidado e qualidade de vida para os moradores.</span><span class="role-skill"><b>+4</b> SAÚDE</span><span class="role-check">✓</span></button>
+        <button class="role-card" type="button" data-role="cultura" aria-pressed="false"><span class="role-card-index">04</span><span class="role-icon role-icon-pink">♫</span><span class="role-card-title">Produtor cultural</span><span class="role-card-desc">Valoriza artistas locais e amplia o acesso à cultura e ao lazer.</span><span class="role-skill"><b>+4</b> CULTURA E LAZER</span><span class="role-check">✓</span></button>
+        <button class="role-card" type="button" data-role="articulador" aria-pressed="false"><span class="role-card-index">05</span><span class="role-icon role-icon-orange">◎</span><span class="role-card-title">Articulador comunitário</span><span class="role-card-desc">Conecta moradores, iniciativas, oportunidades e redes de apoio.</span><span class="role-skill"><b>+4</b> EMPREGO E RENDA</span><span class="role-check">✓</span></button>
+        <button class="role-card" type="button" data-role="comunicacao" aria-pressed="false"><span class="role-card-index">06</span><span class="role-icon role-icon-purple">✳</span><span class="role-card-title">Comunicador local</span><span class="role-card-desc">Dá visibilidade às demandas da comunidade e fortalece sua participação.</span><span class="role-skill"><b>+4</b> QUALIDADE DE VIDA</span><span class="role-check">✓</span></button>
+      </div>
+      <div class="role-bottom-bar"><div class="role-selection-hint" id="roleHint"><span class="hint-dot"></span> Selecione exatamente duas funções para continuar.</div><button class="button button-green" id="continueToGame" type="button" disabled>CONTINUAR <span>→</span></button></div>
+    </section>
+  </main>
+  <footer class="game-page-footer">
+    <span>JUVENTUDE EM MOVIMENTO</span><span>UMA EXPERIÊNCIA DE CULTURA E CIDADANIA</span>
+    <div class="footer-credits"><span class="footer-credits-label">PROJETO DESENVOLVIDO POR</span><span class="footer-credits-names">Ana Luyza · Evillyn Fernandes · Gabriela Oliveira · João Gabriel · Maria Luiza</span></div>
+  </footer>
+  <script src="js/funcoes.js"></script>
+</body>
+</html>

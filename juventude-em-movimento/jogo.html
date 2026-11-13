@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#10352b">
+  <title>Vila Esperança — Juventude em Movimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="play-page">
+  <div class="play-topbar"><a class="game-brand" href="index.html"><span class="game-brand-icon">✳</span><span>JUVENTUDE EM<br><strong>MOVIMENTO</strong></span></a><div class="play-top-center"><span>VILA ESPERANÇA</span><span class="play-level" id="topLevel">ETAPA 01 / 07</span></div><div class="play-top-actions"><button id="backToRoles" class="icon-button" type="button" title="Voltar às funções" aria-label="Voltar às funções">↶</button><button id="restartGame" class="restart-button" type="button">REINICIAR <span>↻</span></button></div></div>
+  <main class="play-main" id="playMain">
+    <div class="play-progress-row"><span id="progressLabel">SUA JORNADA PELA VILA</span><span id="progressPercent">14% CONCLUÍDO</span></div>
+    <div class="play-progress-track"><div id="progressBar" class="play-progress-fill"></div></div>
+    <div class="play-layout" id="playLayout">
+      <aside class="community-dashboard">
+        <div class="dashboard-heading"><div><span class="dashboard-kicker">PAINEL DA COMUNIDADE</span><h2>Vila<br><em>Esperança.</em></h2></div><span class="dashboard-asterisk">✳</span></div>
+        <div class="population-line"><span>POPULAÇÃO</span><b>8.500 <small>moradores</small></b></div>
+        <div class="budget-box"><span>ORÇAMENTO DISPONÍVEL</span><strong id="budgetValue">R$ 100.000</strong><div class="budget-track"><i id="budgetBar"></i></div><small id="budgetUsed">100% do orçamento inicial</small></div>
+        <div class="metrics-title"><span>INDICADORES SOCIAIS</span><span>0—100</span></div>
+        <div id="metricsList" class="metrics-list"></div>
+        <div class="team-mini"><span>SUA EQUIPE</span><div id="teamTags" class="team-tags"></div></div>
+        <p class="dashboard-footnote">Os valores são fictícios e representam a dinâmica do jogo.</p>
+      </aside>
+      <section class="mission-column" id="missionColumn">
+        <div class="mission-meta"><span class="mission-chip" id="missionCategory">INFRAESTRUTURA</span><span class="mission-difficulty">DESAFIO <b id="missionNumber">01</b> <i>—</i> 07</span></div>
+        <div class="mission-heading"><span class="mission-giant-number" id="giantNumber">01</span><div><div class="eyebrow"><span class="eyebrow-dot"></span> UM NOVO DESAFIO SURGIU</div><h1 id="missionTitle">Falta de saneamento básico</h1></div></div>
+        <p class="mission-description" id="missionDescription">A comunidade enfrenta problemas com esgoto a céu aberto, falta de água tratada e coleta irregular de lixo.</p>
+        <div class="situation-box"><span class="situation-icon">!</span><div><b>A SITUAÇÃO</b><p id="missionSituation">Você precisa decidir como usar os recursos disponíveis para melhorar as condições de saneamento da Vila Esperança.</p></div></div>
+        <div class="choice-header"><div><div class="eyebrow"><span class="eyebrow-dot"></span> SUA DECISÃO MUDA O CENÁRIO</div><h2>O que você vai fazer?</h2></div><span class="choice-instruction">ESCOLHA UMA ALTERNATIVA</span></div>
+        <div class="choice-list" id="choiceList"></div>
+        <div class="mission-actions"><p class="selection-feedback" id="selectionFeedback">Selecione uma alternativa para continuar.</p><button class="button button-green" id="confirmChoice" type="button" disabled>CONFIRMAR ESCOLHA <span>→</span></button></div>
+        <div class="result-card" id="resultCard" hidden aria-live="polite"></div>
+      </section>
+    </div>
+    <section class="revelation-screen" id="revelationScreen" hidden></section>
+  </main>
+  <footer class="game-page-footer play-footer">
+    <span>JUVENTUDE EM MOVIMENTO</span><span>NA VIDA REAL, CADA ESCOLHA TEM CONSEQUÊNCIAS.</span>
+    <div class="footer-credits"><span class="footer-credits-label">PROJETO DESENVOLVIDO POR</span><span class="footer-credits-names">Ana Luyza · Evillyn Fernandes · Gabriela Oliveira · João Gabriel · Maria Luiza</span></div>
+  </footer>
+  <div class="toast" id="gameToast" role="status" aria-live="polite"></div>
+  <script src="js/config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="js/supabase.js"></script><script src="js/jogo.js"></script>
+</body>
+</html>
